@@ -1,4 +1,4 @@
 sp2-cw1-2014
 ============
 
-Software and Programming - Coursework 1
+Software and Programming 2 - Coursework 1
