@@ -47,20 +47,23 @@ public class Coursework {
 				break;
 			}
 		}
-		System.out.print("\nCommon data is: ");
-		for (int x = 0; x < data1.length; x++) {
-			for (int y = 0; y < data2.length; y++) {
-				if (data1[x] == data2[y]) {
-					if (data1[x] != 0) {
-						System.out.print(data1[x] + " ");
-						counter++;
+		if (data1[1] == 0 && data2[1] == 0) {
+			System.out.print("\nBoth arrays are empty");
+		} else {
+			System.out.print("\nCommon data is: ");
+			for (int x = 0; x < data1.length; x++) {
+				for (int y = 0; y < data2.length; y++) {
+					if (data1[x] == data2[y]) {
+						if (data1[x] != 0) {
+							System.out.print(data1[x] + " ");
+							counter++;
+						}
 					}
-				}
-			}			
+				}			
+			}
+			System.out.print("\nNumber of common data: " + counter);
+			System.out.print("\nNon-common values for array 1 are: ");
+			System.out.print("\nNon-common values for array 2 are: ");
 		}
-		System.out.print("\nNumber of common data: " + counter);
-		System.out.print("\nNon-common values for array 1 are: ");
-		System.out.print("\nNon-common values for array 2 are: ");
 	}
-
 }
