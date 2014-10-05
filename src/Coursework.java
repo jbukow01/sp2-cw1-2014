@@ -59,7 +59,8 @@ public class Coursework {
 			}			
 		}
 		System.out.print("\nNumber of common data: " + counter);
-			//System.out.println("Values for array 1 are: " + Arrays.toString(data1));
+		System.out.print("\nNon-common values for array 1 are: ");
+		System.out.print("\nNon-common values for array 2 are: ");
 	}
 
 }
