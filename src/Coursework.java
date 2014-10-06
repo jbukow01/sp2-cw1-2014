@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Coursework1 {
+public class Coursework {
 	
 	/* Software and Programming 2
 	 * Coursework 1
