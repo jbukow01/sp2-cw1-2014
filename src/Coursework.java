@@ -116,7 +116,7 @@ public class Coursework {
 			
 			System.out.print("\nNon-common values for array 2 are: ");
 			
-			//compare second array to the first and print if value doesn't exist
+			//compare second array to the first array and print if value doesn't exist
 			for (int i = 0; i < ENTRIES; i++) {
 				for (int j = 0; j < ENTRIES; j++) {
 					checkNonCommon2 = true;
