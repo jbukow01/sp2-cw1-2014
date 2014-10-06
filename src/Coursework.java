@@ -1,6 +1,12 @@
 import java.util.Scanner;
 
-public class Coursework {
+public class Coursework1 {
+	
+	/* Software and Programming 2
+	 * Coursework 1
+	 * Jarek Bukowski
+	 * jbukow01
+	 */
 
 	public static void main(String[] args) {
 		
@@ -16,6 +22,7 @@ public class Coursework {
 		boolean checkNonCommon2 = true;
 		Scanner in = new Scanner(System.in);
 		
+		//do loop for the first array
 		do {
 			System.out.print("Enter data for array 1 (0 to finish): ");
 			checkElem1 = in.nextInt();
@@ -23,6 +30,7 @@ public class Coursework {
 				for(int i = 0; i <= checkElem1; i++) {
 					if(checkElem1 == data1[i]) {
 						i = checkCount1;
+					//add value to the array if doesn't exist yet
 					} else if (i == checkCount1) {
 						data1[i] = checkElem1;
 						checkCount1++;
@@ -32,6 +40,7 @@ public class Coursework {
 			}
 		} while (checkElem1 != 0 && checkCount1 < 100);
 		
+		//do loop for the second array
 		do {
 			System.out.print("Enter data for array 2 (0 to finish): ");
 			checkElem2 = in.nextInt();
@@ -39,6 +48,7 @@ public class Coursework {
 				for(int i = 0; i <= checkElem2; i++) {
 					if(checkElem2 == data2[i]) {
 						i = checkCount2;
+					//add value to the array if doesn't exist yet
 					} else if (i == checkCount2) {
 						data2[i] = checkElem2;
 						checkCount2++;
@@ -48,8 +58,8 @@ public class Coursework {
 			}
 		} while (checkElem2 != 0 && checkCount2 < 100);
 		
-		
 		System.out.print("Values for array 1 are: ");
+		
 		for (int i = 0; i < ENTRIES; i++) {
 			if (data1[i] != 0) {
 				System.out.print(data1[i] + " ");
@@ -58,7 +68,9 @@ public class Coursework {
 				break;
 			}
 		}
+		
 		System.out.print("\nValues for array 2 are: ");
+		
 		for (int i = 0; i < ENTRIES; i++) {
 			if (data2[i] != 0) {
 				System.out.print(data2[i] + " ");
@@ -67,8 +79,11 @@ public class Coursework {
 				break;
 			}
 		}
+		
+		//print both arrays are empty if true and don't do any calculations
 		if (data1[1] == 0 && data2[1] == 0) {
 			System.out.print("\nBoth arrays are empty");
+		//otherwise print calculations
 		} else {
 			System.out.print("\nCommon data is: ");
 			for (int i = 0; i < ENTRIES; i++) {
@@ -82,7 +97,10 @@ public class Coursework {
 				}			
 			}
 			System.out.print("\nNumber of common data: " + counter);
+			
 			System.out.print("\nNon-common values for array 1 are: ");
+			
+			//compare first array to the second array and print if value doesn't exist
 			for (int i = 0; i < ENTRIES; i++) {
 				for (int j = 0; j < ENTRIES; j++) {
 					checkNonCommon1 = true;
@@ -95,7 +113,10 @@ public class Coursework {
 					System.out.print(data1[i] + " ");
 				}
 			}
+			
 			System.out.print("\nNon-common values for array 2 are: ");
+			
+			//compare second array to the first and print if value doesn't exist
 			for (int i = 0; i < ENTRIES; i++) {
 				for (int j = 0; j < ENTRIES; j++) {
 					checkNonCommon2 = true;
@@ -112,4 +133,3 @@ public class Coursework {
 		in.close();
 	}
 }
-	
